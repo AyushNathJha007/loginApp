@@ -34,21 +34,23 @@ public class MainActivity extends AppCompatActivity {
 
         retrofitInterface = retrofit.create(RetrofitInterface.class);
 
-
-
-       findViewById(R.id.login).setOnClickListener(new View.OnClickListener() {
+        final Button LoginButton=findViewById(R.id.login);
+       LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 handleLoginDialog();
             }
         });
 
-       findViewById(R.id.signup).setOnClickListener(new View.OnClickListener() {
+        
+        findViewById(R.id.Sign_up).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 handleSignupDialog();
             }
         });
+
+
 
     }
 
